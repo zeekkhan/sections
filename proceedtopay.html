@@ -3,116 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>Checkout - Plate Mate</title>
     <link rel="stylesheet" href="proceed.css">
 </head>
 <body>
-    <!-- Two Main Sections -->
-    <section class="checkout">
-        <div class="container">
-            <div class="checkout-sections">
-                <!-- Personal Details Section -->
-                <div class="personal-details">
-                    <h2>Personal Details</h2>
+    <main class="main-content">
+        <div class="cart-page">
+            <h1>Checkout</h1>
+            <div class="coupon">
+                <input type="checkbox" id="coupon">
+                <label for="coupon">Have a coupon? <a href="#">Click here to enter your code</a></label>
+            </div>
+            <div class="checkout-grid">
+                <div class="billing-details">
+                    <h2>Billing Details</h2>
                     <form>
                         <div class="form-group">
-                            <label for="first-name">First Name *</label>
-                            <input type="text" id="first-name">
+                            <label for="first-name">First name <span>*</span></label>
+                            <input type="text" id="first-name" required>
                         </div>
                         <div class="form-group">
-                            <label for="last-name">Last Name *</label>
-                            <input type="text" id="last-name">
+                            <label for="last-name">Last name <span>*</span></label>
+                            <input type="text" id="last-name" required>
                         </div>
                         <div class="form-group">
-                            <label for="company-name">Company Name (Optional)</label>
+                            <label for="company-name">Company name (optional)</label>
                             <input type="text" id="company-name">
                         </div>
                         <div class="form-group">
-                            <label for="address">Address Line 1 *</label>
-                            <input type="text" id="address">
+                            <label for="country-region">Country / Region <span>*</span></label>
+                            <select id="country-region" required>
+                                <option>United Kingdom (UK)</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label for="address-2">Apartment, suite, etc. (Optional)</label>
+                            <label for="address-1">Address Line 1 <span>*</span></label>
+                            <input type="text" id="address-1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address-2">Apartment, suite, unit, etc. (optional)</label>
                             <input type="text" id="address-2">
                         </div>
                         <div class="form-group">
-                            <label for="city">Town / City *</label>
-                            <input type="text" id="city">
+                            <label for="city">Town / City <span>*</span></label>
+                            <input type="text" id="city" required>
                         </div>
                         <div class="form-group">
-                            <label for="postcode">Postcode *</label>
-                            <input type="text" id="postcode">
+                            <label for="county">County (optional)</label>
+                            <input type="text" id="county">
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone *</label>
-                            <input type="tel" id="phone">
+                            <label for="postcode">Postcode <span>*</span></label>
+                            <input type="text" id="postcode" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email">
+                            <label for="phone">Phone <span>*</span></label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address <span>*</span></label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="sign-up">
+                            <label for="sign-up">Sign up for our mailing list (optional)</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="delivery-instructions">Delivery instructions (optional)</label>
+                            <textarea id="delivery-instructions"></textarea>
                         </div>
                     </form>
                 </div>
-
-                <!-- Your Order & Payment Section -->
-                <div class="order-payment">
-                    <h2>Your Order</h2>
-                    <div class="order-summary">
-                        <div class="order-items">
-                            <div class="item">
-                                <span class="product-name">SS23 DCD</span>
-                                <span class="product-price">£10.99</span>
-                            </div>
-                            <div class="item">
-                                <span class="product-name">SS23 DCD</span>
-                                <span class="product-price">£10.99</span>
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="product">
+                        <div class="product-info">
+                            <img src="./assets/PLATE1.png" alt="Product Image">
+                            <div class="details">
+                                <span>SS23 DCD</span>
+                                <span>Qty: 1</span>
                             </div>
                         </div>
-                        <div class="total-section">
-                            <div class="subtotal">
-                                <span>Subtotal</span>
-                                <span>£21.98</span>
-                            </div>
-                            <div class="shipping-options">
-                                <span>Select Delivery</span>
-                                <select>
-                                    <option value="express">Express | £8.99</option>
-                                    <option value="economy">Economy | £6.99</option>
-                                </select>
-                            </div>
-                            <div class="total">
-                                <span>Total</span>
-                                <span>£30.97</span>
-                            </div>
+                        <div class="price">
+                            <span>£10.99</span>
                         </div>
                     </div>
-
-                    <h2>Payment</h2>
+                    <div class="product">
+                        <div class="product-info">
+                            <img src="./assets/PLATE2.png" alt="Product Image">
+                            <div class="details">
+                                <span>SS23 DCD</span>
+                                <span>Qty: 1</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span>£10.99</span>
+                        </div>
+                    </div>
+                    <div class="summary">
+                        <p>Subtotal: £21.98</p>
+                        <p>Shipping: £8.99</p>
+                        <h3>Total: £30.97</h3>
+                    </div>
                     <div class="payment-methods">
-                        <form>
-                            <div class="form-group">
-                                <label for="card-number">Card Number *</label>
-                                <input type="text" id="card-number">
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="expiry">Expiry (MM/YY) *</label>
-                                    <input type="text" id="expiry">
-                                </div>
-                                <div class="form-group">
-                                    <label for="cvv">CVV *</label>
-                                    <input type="text" id="cvv">
+                        <h3>Payment Methods</h3>
+                        <div class="method">
+                            <input type="radio" id="card-payment" name="payment-method" required>
+                            <label for="card-payment">Debit & Credit Cards (PayPal)</label>
+                            <div class="card-details">
+                                <input type="text" placeholder="Card number" class="card-number" required>
+                                <div class="card-expiry-cvv">
+                                    <input type="text" placeholder="MM / YY" class="card-expiry" required>
+                                    <input type="text" placeholder="CVV" class="card-cvv" required>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <button type="submit" class="place-order">Place Order</button>
-                            </div>
-                        </form>
+                        </div>
+                        <div class="method">
+                            <input type="radio" id="paypal" name="payment-method">
+                            <label for="paypal">PayPal, Google Pay, or Apple Pay</label>
+                        </div>
                     </div>
+                    <button type="submit" class="place-order-btn">Place Order</button>
+                    
                 </div>
             </div>
         </div>
-    </section>
-
+    </main>
+    
 </body>
 </html>
+
+
