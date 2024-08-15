@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="proceed.css">
+</head>
+<body>
+    <!-- Two Main Sections -->
+    <section class="checkout">
+        <div class="container">
+            <div class="checkout-sections">
+                <!-- Personal Details Section -->
+                <div class="personal-details">
+                    <h2>Personal Details</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="company-name">Company Name (Optional)</label>
+                            <input type="text" id="company-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address Line 1 *</label>
+                            <input type="text" id="address">
+                        </div>
+                        <div class="form-group">
+                            <label for="address-2">Apartment, suite, etc. (Optional)</label>
+                            <input type="text" id="address-2">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Town / City *</label>
+                            <input type="text" id="city">
+                        </div>
+                        <div class="form-group">
+                            <label for="postcode">Postcode *</label>
+                            <input type="text" id="postcode">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Your Order & Payment Section -->
+                <div class="order-payment">
+                    <h2>Your Order</h2>
+                    <div class="order-summary">
+                        <div class="order-items">
+                            <div class="item">
+                                <span class="product-name">SS23 DCD</span>
+                                <span class="product-price">£10.99</span>
+                            </div>
+                            <div class="item">
+                                <span class="product-name">SS23 DCD</span>
+                                <span class="product-price">£10.99</span>
+                            </div>
+                        </div>
+                        <div class="total-section">
+                            <div class="subtotal">
+                                <span>Subtotal</span>
+                                <span>£21.98</span>
+                            </div>
+                            <div class="shipping-options">
+                                <span>Select Delivery</span>
+                                <select>
+                                    <option value="express">Express | £8.99</option>
+                                    <option value="economy">Economy | £6.99</option>
+                                </select>
+                            </div>
+                            <div class="total">
+                                <span>Total</span>
+                                <span>£30.97</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Payment</h2>
+                    <div class="payment-methods">
+                        <form>
+                            <div class="form-group">
+                                <label for="card-number">Card Number *</label>
+                                <input type="text" id="card-number">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expiry">Expiry (MM/YY) *</label>
+                                    <input type="text" id="expiry">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvv">CVV *</label>
+                                    <input type="text" id="cvv">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="place-order">Place Order</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

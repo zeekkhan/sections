@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #444;
+    border-bottom: 3px solid #ff4a00;
+    padding-bottom: 8px;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+
+/* Checkout Section */
+.checkout {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Dividing Sections */
+.checkout-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.personal-details, .order-payment {
+    width: 47%;
+}
+
+/* Personal Details Section */
+.personal-details .form-group {
+    margin-bottom: 15px;
+}
+
+.personal-details label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.personal-details input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Order & Payment Section */
+.order-summary {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.order-items .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.order-items .product-name {
+    font-weight: 600;
+    color: #333;
+}
+
+.order-items .product-price {
+    font-weight: bold;
+    color: #444;
+}
+
+.total-section {
+    font-size: 16px;
+}
+
+.total-section select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.total-section .total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Payment Methods */
+.payment-methods .form-group {
+    margin-bottom: 15px;
+}
+
+.payment-methods .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.payment-methods input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.place-order {
+    background-color: #ff4a00;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .checkout-sections {
+        flex-direction: column;
+    }
+
+    .personal-details, .order-payment {
+        width: 100%;
+    }
+}
